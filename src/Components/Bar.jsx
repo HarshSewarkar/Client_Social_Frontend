@@ -1,5 +1,5 @@
-import React from "react";
-import "./Style/nav.css";
+import "../Style/nav.css";
+
 const Bar = () => {
   return (
     <>

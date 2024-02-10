@@ -1,12 +1,20 @@
 import React from "react";
-import Bar from "./Bar";
+import "./Style/Home.css"
+import Bar from "../src/Components/Bar";
+import Feed from "./Feed";
+import LeftSide from "../src/Components/LeftSide";
+import RightSide from "../src/Components/RightSide";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Bar />
-      this is home page
-    </div>
+      <div className="homeCointainer">
+        <LeftSide />
+        <Feed />
+        <RightSide />
+      </div>
+    </>
   );
 };
 
