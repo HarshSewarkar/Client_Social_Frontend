@@ -3,6 +3,8 @@
   height: calc(100vh - 70px);
   font-family: "Poppins", sans-serif;
   overflow-y: scroll;
+  position: sticky;
+  top: 90px;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -47,16 +49,4 @@
   margin: 0%;
   padding: 0%;
   list-style: none;
-}
-.sidebarFriend {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.sidebarFriendImg {
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 10px;
 }

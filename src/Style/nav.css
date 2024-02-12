@@ -5,8 +5,9 @@
   padding: 10px 20px;
   position: sticky;
   font-family: "Poppins", sans-serif;
-  background-color: #53d3bb;
+  background-color: #778af697;
   top: 0;
+  z-index: 999;
 }
 
 .navLeft {
@@ -53,7 +54,11 @@
 .navbarLinks,
 .navBarIcons {
   display: flex;
+  gap: 10px;
   font-size: 18px;
+}
+.kuch {
+  margin-left: -15px;
 }
 
 .navBarIconBadge {
@@ -61,7 +66,7 @@
   color: #fff;
   border-radius: 50%;
   padding: 1px 6px;
-  margin-left: -40%;
+  margin-left: -60%;
   font-size: 0.6rem;
 }
 

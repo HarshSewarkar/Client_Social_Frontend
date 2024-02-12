@@ -24,15 +24,15 @@ const Bar = () => {
           </div>
           <div className="navBarIcons">
             <div className="navBarIconItems">
-              <span className="material-symbols-outlined">Person</span>
+              <span className="kuch material-symbols-outlined">Person</span>
               <span className="navBarIconBadge">1</span>
             </div>
             <div className="navBarIconItems">
-              <span className="material-symbols-outlined">Chat</span>
+              <span className="kuch material-symbols-outlined">Chat</span>
               <span className="navBarIconBadge">2</span>
             </div>
             <div className="navBarIconItems">
-              <span className="material-symbols-outlined">notifications</span>
+              <span className="kuch material-symbols-outlined">notifications</span>
               <span className="navBarIconBadge">3</span>
             </div>
           </div>
