@@ -1,10 +1,10 @@
 import "../Style/rightSide.css";
 import { Users } from "../dummyUser";
 import Online from "./Online";
-const RightSide = () => {
-  return (
-    <div className="RightSideCointainer">
-      <div className="rightbarWrapper">
+const RightSide = ({ profile }) => {
+  const HomeRightBar = () => {
+    return (
+      <>
         <div className="birthdayCointainer">
           <img src="../images/people.png" alt="" className="birthdayImg" />
           <span className="birthdayText">
@@ -22,8 +22,97 @@ const RightSide = () => {
             <Online key={u.id} user={u} />
           ))}
         </ul>
+      </>
+    );
+  };
+  const profileRightBar = () => {
+    return (
+      <>
+        <h4 className="rightbarTitle">User Information</h4>
+        <div className="rightbarInfo">
+          <div className="rightbarInfoItem ">
+            <span className="rightbarInfoKey">City: </span>
+            <span className="rightbarInfoValue">New York </span>
+          </div>
+          <div className="rightbarInfoItem ">
+            <span className="rightbarInfoKey">from: </span>
+            <span className="rightbarInfoValue">London </span>
+          </div>
+          <div className="rightbarInfoItem ">
+            <span className="rightbarInfoKey">Relationship: </span>
+            <span className="rightbarInfoValue">Mingle </span>
+          </div>
+        </div>
+        <h4 className="rightBarTitle">User Friends</h4>
+        <div className="rightbarFollowings">
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user5.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user6.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user7.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user8.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user9.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user3.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+          <div className="rightbarFollowing">
+            <img
+              src="../../images/user4.jpg"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <spam className="rightbarfollowingName">John Carten</spam>
+          </div>
+        </div>
+      </>
+    );
+  };
+  return (
+    <>
+      <div className="RightSideCointainer">
+        <div className="rightbarWrapper">
+          {profile ? profileRightBar() : HomeRightBar()}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

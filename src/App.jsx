@@ -1,11 +1,19 @@
 import React from 'react'
-import Profile from './Profile'
+// import Login from './login'
+// import Register from './Register'
+// import Profile from './Profile'
+import Home from './Profile'
+
 
 
 const App = () => {
+  
   return (
     <div>
-      <Profile />
+      <Home />
+      {/* <Profile /> */}
+      {/* <Login /> */}
+      {/* <Register /> */}
     </div>
   )
 }
