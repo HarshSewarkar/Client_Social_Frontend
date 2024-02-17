@@ -1,18 +1,19 @@
 import "../Style/Online.css";
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
-const Online = ({user}) => {
+const Online = ({ user }) => {
   return (
     <div>
       <li className="rightBarFriend">
         <div className="rightbarProfileImgCointainer">
           <img
-            src={user.profilePicture}
+            src={PF + user.profilePicture}
             alt=""
             className="rightbarProfileImg"
           />
           <span className="rightbarOnline"></span>
         </div>
-        <span className="rightbarUsername">{user.username }</span>
+        <span className="rightbarUsername">{user.username}</span>
       </li>
     </div>
   );

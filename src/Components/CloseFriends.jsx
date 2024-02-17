@@ -1,11 +1,13 @@
 import "../Style/closeFriends.css"
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
 const CloseFriends = ({user}) => {
+
   return (
     <>
         <li className="sidebarFriend">
             <img
-              src={user.profilePicture}
+              src={PF+user.profilePicture}
               alt=""
               className="sidebarFriendImg"
             />

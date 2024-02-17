@@ -1,21 +1,21 @@
 export const Users = [
-  { id: 1, username: "jors miller", profilePicture: "./images/user1.jpg" },
-  { id: 2, username: "roy chiler", profilePicture: "./images/user2.jpg" },
-  { id: 3, username: "buff piller", profilePicture: "./images/user3.jpg" },
-  { id: 4, username: "jonny hiller", profilePicture: "./images/user4.jpg" },
-  { id: 5, username: "killer deeler", profilePicture: "./images/user5.jpg" },
-  { id: 6, username: "filler hiller", profilePicture: "./images/user6.jpg" },
-  { id: 7, username: "jailer layler", profilePicture: "./images/user7.jpg" },
-  { id: 8, username: "hey miler", profilePicture: "./images/user8.jpg" },
-  { id: 9, username: "judy jd", profilePicture: "./images/user9.jpg" },
-  { id: 10, username: "hdjss hdk", profilePicture: "./images/user10.jpg" },
+  { id: 1, username: "jors miller", profilePicture: "user1.jpg" },
+  { id: 2, username: "roy chiler", profilePicture: "user2.jpg" },
+  { id: 3, username: "buff piller", profilePicture: "user3.jpg" },
+  { id: 4, username: "jonny hiller", profilePicture: "user4.jpg" },
+  { id: 5, username: "killer deeler", profilePicture: "user5.jpg" },
+  { id: 6, username: "filler hiller", profilePicture: "user6.jpg" },
+  { id: 7, username: "jailer layler", profilePicture: "user7.jpg" },
+  { id: 8, username: "hey miler", profilePicture: "user8.jpg" },
+  { id: 9, username: "judy jd", profilePicture: "user9.jpg" },
+  { id: 10, username: "hdjss hdk", profilePicture: "user10.jpg" },
 ];
 
 export const Posts = [
   {
     id: 1,
     description: "Amazing view from the mountains!",
-    photo: "./images/post1.jpg",
+    photo: "post1.jpg",
     date: "2 min ago",
     userId: 1,
     likes: 15,
@@ -24,7 +24,7 @@ export const Posts = [
   {
     id: 2,
     description: "Delicious homemade dinner tonight!",
-    photo: "./images/post2.jpg",
+    photo: "post2.jpg",
     date: "5 min ago",
     userId: 2,
     likes: 20,
@@ -33,7 +33,7 @@ export const Posts = [
   {
     id: 3,
     description: "Exploring the city streets!",
-    photo: "./images/post3.jpg",
+    photo: "post3.jpg",
     date: "15 min ago",
     userId: 3,
     likes: 12,
@@ -42,7 +42,7 @@ export const Posts = [
   {
     id: 4,
     description: "Sunny day at the beach!",
-    photo: "./images/post4.jpg",
+    photo: "post4.jpg",
     date: "10 min ago",
     userId: 4,
     likes: 18,
@@ -51,7 +51,7 @@ export const Posts = [
   {
     id: 5,
     description: "Coffee and books in my favorite cafe!",
-    photo: "./images/post5.jpg",
+    photo: "post5.jpg",
     date: "7 min ago",
     userId: 5,
     likes: 25,
@@ -60,7 +60,7 @@ export const Posts = [
   {
     id: 6,
     description: "Hiking in the forest!",
-    photo: "./images/post6.jpg",
+    photo: "post6.jpg",
     date: "1 min ago",
     userId: 6,
     likes: 22,
@@ -69,7 +69,7 @@ export const Posts = [
   {
     id: 7,
     description: "New art exhibition in town!",
-    photo: "./images/post7.jpg",
+    photo: "post7.jpg",
     date: "5 min ago",
     userId: 7,
     likes: 14,
@@ -78,7 +78,7 @@ export const Posts = [
   {
     id: 8,
     description: "Gardening day in my backyard!",
-    photo: "./images/post8.jpg",
+    photo: "post8.jpg",
     date: "22 min ago",
     userId: 8,
     likes: 17,
@@ -87,7 +87,7 @@ export const Posts = [
   {
     id: 9,
     description: "Watching the sunset by the lake!",
-    photo: "./images/post9.jpg",
+    photo: "post9.jpg",
     date: "23 min ago",
     userId: 9,
     likes: 19,
@@ -96,7 +96,7 @@ export const Posts = [
   {
     id: 10,
     description: "Cooking up a storm in the kitchen!",
-    photo: "./images/post10.jpg",
+    photo: "post10.jpg",
     date: "16 min ago",
     userId: 10,
     likes: 16,

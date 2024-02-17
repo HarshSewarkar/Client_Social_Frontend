@@ -12,7 +12,7 @@ const register = () => {
             </span>
           </div>
           <div className="registerRight">
-            <div className="inputBox">
+            <div className="reginputBox">
               <input placeholder="Username" type="text" className="registerInput" />
               <input placeholder="Email" type="text" className="registerInput" />
               <input placeholder="Password" type="text" className="registerInput" />

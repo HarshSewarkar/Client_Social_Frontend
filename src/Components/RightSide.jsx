@@ -1,6 +1,9 @@
 import "../Style/rightSide.css";
 import { Users } from "../dummyUser";
 import Online from "./Online";
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
+
+
 const RightSide = ({ profile }) => {
   const HomeRightBar = () => {
     return (
@@ -47,59 +50,59 @@ const RightSide = ({ profile }) => {
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img
-              src="../../images/user5.jpg"
+              src={`${PF}user5.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user6.jpg"
+              src={`${PF}user6.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user7.jpg"
+              src={`${PF}user7.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user8.jpg"
+              src={`${PF}user8.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user9.jpg"
+              src={`${PF}user9.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user3.jpg"
+              src={`${PF}user3.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
           <div className="rightbarFollowing">
             <img
-              src="../../images/user4.jpg"
+              src={`${PF}user4.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
-            <spam className="rightbarfollowingName">John Carten</spam>
+            <span className="rightbarfollowingName">John Carten</span>
           </div>
         </div>
       </>

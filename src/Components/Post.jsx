@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../Style/Post.css";
 import { Users } from "../dummyUser";
+const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
 const Post = ({ post }) => {
   const [like, setlike] = useState(post.likes);
@@ -10,18 +11,19 @@ const Post = ({ post }) => {
     setlike(isLike ? like - 1 : like + 1);
     setisLike(!isLike);
   };
+
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src={Users.filter((u) => u.id === post.userId)[0].profilePicture}
-              alt=""
+              src={Users.find((u) => u.id === post.userId)?.profilePicture}
+              alt="User Profile"
               className="postProfileImg"
             />
             <span className="postUserName">
-              {Users.filter((u) => u.id === post.userId)[0].username}
+              {Users.find((u) => u.id === post.userId)?.username}
             </span>
             <span className="postDate">{post.date}</span>
           </div>
@@ -31,18 +33,20 @@ const Post = ({ post }) => {
         </div>
         <div className="postCenter">
           <span className="postText">{post.description}</span>
-          <img src={post.photo} alt="" className="postImg" />
+          {/* <img src={`${PF}${post.photo}`} alt="Post Image" className="postImg" /> */}
+          <img src={PF + post.photo} alt="Post Image" className="postImg" />
+
         </div>
         <div className="postBottom">
           <div className="PostBottomLeft">
             <img
-              src="../images/Thumb.png"
+              src={`${PF}Thumb.png`}
               alt=""
               onClick={likeHandler}
               className="likeIcon"
             />
             <img
-              src="../images/Heart.png"
+              src={`${PF}Heart.png`}
               alt=""
               onClick={likeHandler}
               className="likeIcon"

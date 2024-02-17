@@ -1,11 +1,14 @@
 import "../Style/nav.css";
+import {Link} from "react-router-dom"
 
 const Bar = () => {
   return (
     <>
       <div className="navTop ">
         <div className="navLeft">
+          <Link to={"/"} style={{textDecoration:"none"}}>
           <span className="logo">SocialChater</span>
+          </Link>
         </div>
 
         <div className="navCenter">
