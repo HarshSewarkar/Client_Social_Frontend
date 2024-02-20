@@ -5,9 +5,12 @@
   padding: 10px 20px;
   position: sticky;
   font-family: "Poppins", sans-serif;
-  background-color: #778af697;
+  background-color: rgba(44, 44, 44, 0.849);
+  border-radius: 20px;
+  border: 2px solid white;
   top: 0;
   z-index: 999;
+  color: white;
 }
 
 .navLeft {
@@ -23,7 +26,7 @@
 
 .navCenter {
   display: flex;
-  background: white;
+  background-color: rgb(44, 44, 44);
   align-items: center;
   padding: 0px 1px 0px 8px;
   border-radius: 30px;
@@ -34,6 +37,8 @@
   padding: 0px 8px;
   width: 100%;
   height: 49px;
+  background-color: rgba(44, 44, 44, 0.849);
+  color: white;
   border-radius: 30px;
   font-size: 15px;
   border: none;

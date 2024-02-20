@@ -1,4 +1,4 @@
-import "../Style/Online.css";
+import "./Online.css";
 const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
 const Online = ({ user }) => {

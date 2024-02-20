@@ -1,4 +1,4 @@
-import "../Style/closeFriends.css"
+import "./closeFriends.css"
 const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
 const CloseFriends = ({user}) => {

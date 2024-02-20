@@ -1,6 +1,6 @@
-import "../Style/leftSide.css";
-import { Users } from "../dummyUser";
-import CloseFriends from "./closeFriends";
+import "./leftSide.css";
+import { Users } from "../../dummyUser";
+import CloseFriends from "../CloseFriend/CloseFriends";
 
 
 const LeftSide = () => {

@@ -1,4 +1,4 @@
-import "../Style/Share.css";
+import "./Share.css";
 const Share = () => {
   return (
     <div className="share">

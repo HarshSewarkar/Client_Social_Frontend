@@ -1,8 +1,7 @@
-import "../Style/rightSide.css";
-import { Users } from "../dummyUser";
-import Online from "./Online";
+import "./rightSide.css";
+import Online from "../Online/Online";
+import { Users } from "../../dummyUser";
 const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
-
 
 const RightSide = ({ profile }) => {
   const HomeRightBar = () => {

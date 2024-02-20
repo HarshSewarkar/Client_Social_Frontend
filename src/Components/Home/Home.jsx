@@ -1,9 +1,9 @@
 import React from "react";
-import "./Style/Home.css"
-import Bar from "../src/Components/Bar";
-import Feed from "./Feed";
-import LeftSide from "../src/Components/LeftSide";
-import RightSide from "../src/Components/RightSide";
+import "./Home.css"
+import Bar from "../Navbar/Bar";
+import Feed from "../Feed/Feed";
+import LeftSide from "../LeftSide/LeftSide";
+import RightSide from "../RightSide/RightSide";
 
 const Home = () => {
   return (
