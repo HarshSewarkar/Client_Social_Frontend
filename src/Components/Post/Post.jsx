@@ -43,7 +43,7 @@ const Post = ({ post }) => {
           <div className="postTopLeft">
             <Link to={`/profile/${user.username}`}>
               <img
-                src={user?.profilePicture || "../../images/user3.jpg"}
+                src={user?.profilePicture || `${PF}/cover/noUser.gif`}
                 alt="User Profile"
                 className="postProfileImg"
               />

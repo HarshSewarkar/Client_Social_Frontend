@@ -3,7 +3,7 @@ import Online from "../Online/Online";
 import { Users } from "../../dummyUser";
 const PF = import.meta.env.VITE_REACT_APP_PUBLIC_FOLDER;
 
-const RightSide = ({ profile }) => {
+const RightSide = ({ user }) => {
   const HomeRightBar = () => {
     return (
       <>
@@ -34,15 +34,21 @@ const RightSide = ({ profile }) => {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem ">
             <span className="rightbarInfoKey">City: </span>
-            <span className="rightbarInfoValue">New York </span>
+            <span className="rightbarInfoValue">{user.city}</span>
           </div>
           <div className="rightbarInfoItem ">
             <span className="rightbarInfoKey">from: </span>
-            <span className="rightbarInfoValue">London </span>
+            <span className="rightbarInfoValue">{user.from} </span>
           </div>
           <div className="rightbarInfoItem ">
             <span className="rightbarInfoKey">Relationship: </span>
-            <span className="rightbarInfoValue">Mingle </span>
+            <span className="rightbarInfoValue">
+              {user.relationship === 1
+                ? "Single"
+                : user.relationship === 2
+                ? "Married"
+                : " - "}{" "}
+            </span>
           </div>
         </div>
         <h4 className="rightBarTitle">User Friends</h4>
@@ -111,7 +117,7 @@ const RightSide = ({ profile }) => {
     <>
       <div className="RightSideCointainer">
         <div className="rightbarWrapper">
-          {profile ? profileRightBar() : HomeRightBar()}
+          {user ? profileRightBar() : HomeRightBar()}
         </div>
       </div>
     </>
